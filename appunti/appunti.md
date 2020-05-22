@@ -11,7 +11,7 @@ Sofferenze e appunti di Algoritmi :toilet:
 
 # Indice
 
-<img src="//imgs/indicatrice.png" alt="right" align="right"/>
+<img src="/imgs/indicatrice.png" alt="right" align="right"/>
 
 * [Ordinamento](#ordinamento)
     * [Tabella Riassuntiva](#tabella-riassuntiva)
