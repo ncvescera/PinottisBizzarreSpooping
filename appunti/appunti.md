@@ -2,7 +2,7 @@
 
 Sofferenze e appunti di Algoritmi :toilet:
 
-![suffering](imgs/line5_0.gif)
+![suffering](/imgs/line5_0.gif)
 
 <!-- in caso serva per scaricare altre immagini
  https://latex.codecogs.com/gif.latex?SESSO
@@ -11,7 +11,7 @@ Sofferenze e appunti di Algoritmi :toilet:
 
 # Indice
 
-<img src="imgs/indicatrice.png" alt="right" align="right"/>
+<img src="//imgs/indicatrice.png" alt="right" align="right"/>
 
 * [Ordinamento](#ordinamento)
     * [Tabella Riassuntiva](#tabella-riassuntiva)
@@ -61,16 +61,16 @@ Sofferenze e appunti di Algoritmi :toilet:
 
 Algoritmo |Complessità
 -------------|----
-SelectionSort|![line37](imgs/theta_n2.gif)
-InsertionSort|![line38_0](imgs/omega_n.gif)<br>![line38_1](imgs/O_n2.gif)
-MergeSort|![line39](imgs/theta_nlogn.gif)
-QuickSort|![line40](imgs/omega_nlogn.gif)<br>![line40_1](imgs/O_n2.gif)
-CountingSort|![line41_0](imgs/O_n.gif)
-HeapSort|![line42](imgs/theta_nlogn.gif)
+SelectionSort|![line37](/imgs/theta_n2.gif)
+InsertionSort|![line38_0](/imgs/omega_n.gif)<br>![line38_1](/imgs/O_n2.gif)
+MergeSort|![line39](/imgs/theta_nlogn.gif)
+QuickSort|![line40](/imgs/omega_nlogn.gif)<br>![line40_1](/imgs/O_n2.gif)
+CountingSort|![line41_0](/imgs/O_n.gif)
+HeapSort|![line42](/imgs/theta_nlogn.gif)
 
 ## MergeSort
 
-**Complessità in tempo:** nel caso peggiore ![line46](imgs/in_O_nlogn.gif)
+**Complessità in tempo:** nel caso peggiore ![line46](/imgs/in_O_nlogn.gif)
 
 Dividere sempre per 2 è la scelta migliore. L'algoritmo sfrutta della memoria aggiuntiva nella funzione Merge.
 
@@ -126,14 +126,14 @@ function Merge(A, p, q, r){
 
 **Complessità in tempo:** dipende dalla scelta del pivot:
 
-- Nel caso pessimo pivot = max, ![line102](imgs/in_O_n2.gif)
-- Nel caso pessimo in cui il pivot si alterna con il massimo e il minimo, ![line103](imgs/in_O_n2.gif)
+- Nel caso pessimo pivot = max, ![line102](/imgs/in_O_n2.gif)
+- Nel caso pessimo in cui il pivot si alterna con il massimo e il minimo, ![line103](/imgs/in_O_n2.gif)
 
 Generalmente non capita molto spesso di imbattersi nei casi peggiori e la complessità in tempo nel caso medio è:
 
-![line107](imgs/T_n_O_nlogn.gif)
+![line107](/imgs/T_n_O_nlogn.gif)
 <br><br>
-![line109](imgs/t_n_lunga.gif)
+![line109](/imgs/t_n_lunga.gif)
 non ho idea di cosa sia.
 
 <br> **Codice:**
@@ -164,17 +164,17 @@ function Partition(A, p, r){
 }
 ```
 
-`partition(...)` ![line140_0](imgs/in_O_n.gif)<br>
-`QuickSort(A, p, q-1)` ![line141](imgs/in_T_q-p.gif)<br>
-`QuickSort(A, q+1, r)` ![line142](imgs/in_T_r-q.gif)<br>
+`partition(...)` ![line140_0](/imgs/in_O_n.gif)<br>
+`QuickSort(A, p, q-1)` ![line141](/imgs/in_T_q-p.gif)<br>
+`QuickSort(A, q+1, r)` ![line142](/imgs/in_T_r-q.gif)<br>
 
 ## CountingSort
 
 **Complessità in tempo:**  Richiede due array supplementari: B[1, …, n] per l’output ordinato e C[1, …, k] per la memoria di lavoro temporanea. Per eseguire il CountingSort si presume che l’array di partenza A sia un array di interi del tipo A[1, …, n] (indicano gli indici). Si assume anche che il contenuto di A varia tra 0 e k.
 
-![line148](imgs/T_n_O_k_n.gif)<br>
+![line148](/imgs/T_n_O_k_n.gif)<br>
 
-Il CountingSort non essendo un algoritmo di ordinamento per confronti ha limite inferiore ![line150_0](imgs/omega_n.gif) (se ![line150_1](imgs/k_O_n.gif)) e non ![line150_2](imgs/omega_nlogn.gif) come gli algoritmi per confronti. È un algoritmo Stabile: elementi con lo stesso valore compaiono nell’array di output con lo stesso ordine che avevano in quello di input.
+Il CountingSort non essendo un algoritmo di ordinamento per confronti ha limite inferiore ![line150_0](/imgs/omega_n.gif) (se ![line150_1](/imgs/k_O_n.gif)) e non ![line150_2](/imgs/omega_nlogn.gif) come gli algoritmi per confronti. È un algoritmo Stabile: elementi con lo stesso valore compaiono nell’array di output con lo stesso ordine che avevano in quello di input.
 
 **Codice:**
 
@@ -214,9 +214,9 @@ function CountingSort(A, k) {
 
 **Complessità in tempo:** L'algoritmo viene usato per ordinare numeri interi con d cifre in base b. Il costo è: 
 
-![line190](imgs/T_n_d_O_n.gif)<br>
+![line190](/imgs/T_n_d_O_n.gif)<br>
 
-L'algoritmo è ottimo quando ![line192](imgs/b_d2.gif)<br>
+L'algoritmo è ottimo quando ![line192](/imgs/b_d2.gif)<br>
 
 **Codice:**
 
@@ -237,9 +237,9 @@ Ha una forma ben definita e può essere:
 
 - un **min-heap**: ha come chiave della radice il minimo
 
-Questa struttura permette di fare un algoritmo di ordinamento sul posto con costo ![O_nlogn](imgs/O_nlogn.gif) e permette di calcolare il massimo e il minimo con costo inferiore. L'heap viene rappresentato tramite un array.
+Questa struttura permette di fare un algoritmo di ordinamento sul posto con costo ![O_nlogn](/imgs/O_nlogn.gif) e permette di calcolare il massimo e il minimo con costo inferiore. L'heap viene rappresentato tramite un array.
 
-![line215](imgs/line215_0.gif)
+![line215](/imgs/line215_0.gif)
 
 I vari elementi hanno i seguenti indici:
 
@@ -277,13 +277,13 @@ function MaxHeapify(A, i, n){
 }
 ```
 
-La funzione `BuildMaxHeap(A, n)` ha costo ![O_nlogn](imgs/O_nlogn.gif).<br>
-La funzione `MaxHeapify(A, i, n)`  ha costo ![O_logn](imgs/O_logn.gif).<br>È utile per la ricerca del massimo o del minimo.
+La funzione `BuildMaxHeap(A, n)` ha costo ![O_nlogn](/imgs/O_nlogn.gif).<br>
+La funzione `MaxHeapify(A, i, n)`  ha costo ![O_logn](/imgs/O_logn.gif).<br>È utile per la ricerca del massimo o del minimo.
 
 ## HeapSort
 
 **Complessità in tempo:** È un algoritmo in-place ma non stable.
-![line258](imgs/T_n_O_nlogn.gif)
+![line258](/imgs/T_n_O_nlogn.gif)
 
 **Codice:**
 
@@ -304,7 +304,7 @@ Con o senza `BuildMaxHeap(A, n)` il costo della funzione rimane invariato.
 
 ### Insertion-key
 
-Ha costo ![O_logn](imgs/O_logn.gif). Aggiunge un nuovo nodo all'Heap e ne ricalcola il posto.
+Ha costo ![O_logn](/imgs/O_logn.gif). Aggiunge un nuovo nodo all'Heap e ne ricalcola il posto.
 
 **Codice:**
 
@@ -323,7 +323,7 @@ function Insertion-key(A, n, k){
 
 ### Extract-max
 
-Ha costo ![line298](imgs/O_logn.gif).
+Ha costo ![line298](/imgs/O_logn.gif).
 Elimina il massimo (la radice) e ricostruisce l'Heap.
 
 **Codice:**
@@ -342,7 +342,7 @@ function Extract-max(A, n){
 
 ### Extract-key
 
-Ha costo ![line317](imgs/O_logn.gif).
+Ha costo ![line317](/imgs/O_logn.gif).
 Elimina l'elemento alla posizione data e ricostruisce l'Heap.
 
 **Codice:**
@@ -416,7 +416,7 @@ function pop(S) {
     }
 }
 ```
-Tutte le operazioni hanno costo ![O_1](imgs/O_1.gif)
+Tutte le operazioni hanno costo ![O_1](/imgs/O_1.gif)
 
 ## Coda
 
@@ -457,7 +457,7 @@ function dequeue(Q) {
 }
 ```
 
-Tutte le operazioni hanno costo ![O_1](imgs/O_1.gif)
+Tutte le operazioni hanno costo ![O_1](/imgs/O_1.gif)
 
 ## Lista
 
@@ -465,7 +465,7 @@ Tutte le operazioni hanno costo ![O_1](imgs/O_1.gif)
 
 È una struttura dati in cui gli elementi possono essere inseriti in qualunque posizione.
 
-Il tempo di inserimento è ![theta_1](imgs/theta_1.gif)
+Il tempo di inserimento è ![theta_1](/imgs/theta_1.gif)
 
 Ogni elemento ha 3 attributi:
 * `info`: contiene i dati dell'elemento
@@ -512,7 +512,7 @@ function list_search(L, k) {
 }
 ```
 
-`list_search()` nel caso peggiore impiega ![theta_n](imgs/theta_n.gif). Le altre ![O_1](imgs/O_1.gif)
+`list_search()` nel caso peggiore impiega ![theta_n](/imgs/theta_n.gif). Le altre ![O_1](/imgs/O_1.gif)
 
 ## Alberi
 
@@ -561,7 +561,7 @@ L'attributo `key` del nodo viene stampato ogni volta che l'attributo color del n
 
 **Esempio:**
 
-![albero_visita_anticipata](imgs/albero_visita_anticipata.png)
+![albero_visita_anticipata](/imgs/albero_visita_anticipata.png)
 
 `output: 8 3 1 6 4 7 10 14 13`
 
@@ -571,7 +571,7 @@ L'attributo `key` del nodo viene stampato ogni volta che l'attributo color del n
 
 **Esempio:**
 
-![albero_visita_anticipata](imgs/albero_visita_anticipata.png)
+![albero_visita_anticipata](/imgs/albero_visita_anticipata.png)
 
 `output: 1 4 7 6 3 13 14 10 8`
 
@@ -579,7 +579,7 @@ L'attributo `key` del nodo viene stampato ogni volta che l'attributo color del n
 
 L'attributo `key` del nodo viene stampato solo dopo aver visitato un figlio sinistro.
 
-![albero_visita_anticipata](imgs/albero_visita_anticipata.png)
+![albero_visita_anticipata](/imgs/albero_visita_anticipata.png)
 
 `output: 1 3 4 6 7 8 10 13 14`
 
@@ -599,7 +599,7 @@ function inorder_tree_walk(x) {
 
 ```
 
-Il costo è ![theta_n](imgs/theta_n.gif)
+Il costo è ![theta_n](/imgs/theta_n.gif)
 
 ## Ricerca
 
@@ -766,7 +766,7 @@ function tree_insert(T, z) {
 }
 ```
 
-Il costo è ![O_h](imgs/O_h.gif)
+Il costo è ![O_h](/imgs/O_h.gif)
 
 ## Eliminazione
 
@@ -811,19 +811,19 @@ La funzione `restructure()` tramite delle rotazioni ribilancia l'albero.
 
 **RR:** 
 
-![rr](imgs/rr.png)
+![rr](/imgs/rr.png)
 
 **RL:**
 
-![rl](imgs/rl.png)
+![rl](/imgs/rl.png)
 
 **LR:**
 
-![lr](imgs/lr.png)
+![lr](/imgs/lr.png)
 
 **LL:**
 
-![ll](imgs/ll.png)
+![ll](/imgs/ll.png)
 
 
 ---
@@ -844,7 +844,7 @@ L'`elevametno a potenza` di un grafo equivale ad elevare a potenza la matrice di
 
 Una lista di adiacenza consiste in un array di `|V|` liste. Ogni elemento dell'array rappresenta un vertice del Grafo (testa della lista) e ogni lista contiene tutti i vertici adiacenti alla testa della lista.
 
-![liste_adiacenza](imgs/liste_adiacenza.png)
+![liste_adiacenza](/imgs/liste_adiacenza.png)
 
 ## BFS
 
@@ -888,7 +888,7 @@ function BFS(G(V,E), s){
 
 ### Costo
 
-![O_V+E](imgs/O_V+E.gif)
+![O_V+E](/imgs/O_V+E.gif)
 
 ## DFS
 
@@ -949,7 +949,7 @@ function DFS-visit(G(V, E), u){
 
 ### Costo
 
-![theta_V+E](imgs/theta_V+E.gif)
+![theta_V+E](/imgs/theta_V+E.gif)
 
 ---
 
@@ -970,7 +970,7 @@ Tramite una `DFS` si calcolano i tempi di fine visita di ogni Vertice, ogni volt
 
 ### Costo
 
-![theta_V+E](imgs/theta_V+E.gif)
+![theta_V+E](/imgs/theta_V+E.gif)
 
 ---
 
@@ -1014,19 +1014,19 @@ Gli insiemi sono rappresentati tramite una lista concatenata con la seguente for
 * `value`: elemento dell'insieme
 * `next`: puntatore all'elemento successivo nella lista
 
-![liste_unionfind](imgs/liste_unionfind.png)
+![liste_unionfind](/imgs/liste_unionfind.png)
 
 ##### Costo
 
-* `make-set(x)`: ![O_1](imgs/O_1.gif)
-* `union(x, y)`: ![O_n](imgs/O_n.gif) (n = numero di elementi dell'insieme con più elementi)
-* `find-set(x)`: ![O_1](imgs/O_1.gif)
+* `make-set(x)`: ![O_1](/imgs/O_1.gif)
+* `union(x, y)`: ![O_n](/imgs/O_n.gif) (n = numero di elementi dell'insieme con più elementi)
+* `find-set(x)`: ![O_1](/imgs/O_1.gif)
 
 ##### Erustica
 
-* `unione pesata`: Nella funzione `union(x, y)` si unisce sempre la lista di elementi minori a quella con elementi maggiori così da ottenere un lower bound di ![omega_n](imgs/omega_n.gif)
+* `unione pesata`: Nella funzione `union(x, y)` si unisce sempre la lista di elementi minori a quella con elementi maggiori così da ottenere un lower bound di ![omega_n](/imgs/omega_n.gif)
 
-**Costo totale**: ![O_m+nlogn](imgs/O_m+nlogn.gif) se si fanno `m` operazioni `union(x, y)`, `make-set(x)` e `find-set(x)` di cui `n` `make-set(x)`
+**Costo totale**: ![O_m+nlogn](/imgs/O_m+nlogn.gif) se si fanno `m` operazioni `union(x, y)`, `make-set(x)` e `find-set(x)` di cui `n` `make-set(x)`
 
 #### Con Alberi
 
@@ -1037,7 +1037,7 @@ Gli insiemi disgiunti vengono rappresentati tramite un albero:
     * `rango`: il numero di archi da percorrere per arrivare alla foglia più distante in profondità
     * `key`: elemento dell'insieme
 
-![alberi_unionfind](imgs/alberi_unionfind.png)
+![alberi_unionfind](/imgs/alberi_unionfind.png)
 
 Il padre della radice punta a se stesso e ha rango maggiore di tutto l'albero. Il rango della radice determina il rango di tutto l'albero.
 
@@ -1048,11 +1048,11 @@ Il padre della radice punta a se stesso e ha rango maggiore di tutto l'albero. I
 
 ##### Costo
 
-* `make-set(x)`: ![O_1](imgs/O_1.gif)
-* `union(x, y)`: ![O_1](imgs/O_1.gif)
-* `find-set(x)`: ![O_logn](imgs/O_logn.gif) [approssimato per eccesso a `logn`]
+* `make-set(x)`: ![O_1](/imgs/O_1.gif)
+* `union(x, y)`: ![O_1](/imgs/O_1.gif)
+* `find-set(x)`: ![O_logn](/imgs/O_logn.gif) [approssimato per eccesso a `logn`]
 
-**Costo totale**: ![O_aplha_n](imgs/O_alpha_n.gif) dove ![alpha](imgs/alpha.gif) è una funzione quasi lineare
+**Costo totale**: ![O_aplha_n](/imgs/O_alpha_n.gif) dove ![alpha](/imgs/alpha.gif) è una funzione quasi lineare
 
 ##### Codice
 
@@ -1158,15 +1158,15 @@ function Prime(G=(V, E): "grafo", r:"Vertice di partenza"){
 Il costo del primo for è trascurabile quindi consideriamo solo il while.
 
 Il while viene eseguito V volte e al suo interno `extract_min()` ha costo:
-* ![line475](imgs/O_logV.gif) se la coda è implementata con un **MinHeap** o **Heap di Fibonacci**
-* ![line475](imgs/O_V2.gif) se la coda è implementata con un **Array**
+* ![line475](/imgs/O_logV.gif) se la coda è implementata con un **MinHeap** o **Heap di Fibonacci**
+* ![line475](/imgs/O_V2.gif) se la coda è implementata con un **Array**
 
 Il costo del secondo for può essere portato fuori dal while approssimando il numero di iterazioni con la somma delle lunghezze di tutte liste di adiacenza (2E). In `relax()` il costo dell'assegnazione `v.d = w(u, v)` corrisponde ad un `decrease_key()` e il costo dipende dalla struttura della coda:
-* ![line479](imgs/O_logV.gif) se viene usato un MinHeap
-* ![line480](imgs/O_1.gif) se viene usato un Heap di Fibonacci
+* ![line479](/imgs/O_logV.gif) se viene usato un MinHeap
+* ![line480](/imgs/O_1.gif) se viene usato un Heap di Fibonacci
 
 Quindi il costo minimo si avrà utilizzando gli Heap di Fibonacci e sarà:
-![line483](imgs/O_E+VlogV.gif) .
+![line483](/imgs/O_E+VlogV.gif) .
 
 ### Algoritmo di Kruscal
 
@@ -1211,7 +1211,7 @@ function Kruskal(G=(V, E), w){
 > O(logE) = O(logV)
 > ```
 
-![line528](imgs/O_ElogV.gif)
+![line528](/imgs/O_ElogV.gif)
 
 ## Shortes Path da sorgente Unica
 
@@ -1263,7 +1263,7 @@ function relax(u: "vertice corrente", v: "vertice adiacente a u", w(u, v): "peso
 
 > `V + V*E + E --> O(VE)`
 
-![line580](imgs/O_VE.gif)
+![line580](/imgs/O_VE.gif)
 
 ### Algoritmo di Dijkstra
 
@@ -1320,13 +1320,13 @@ function relax(u: "vertice corrente", v: "vertice adiacente a u", w(u, v): "peso
 
 **Per gli Heap di Fibonacci**: 
 
-* `extractMin()` ha costo ![O_1](imgs/O_logV.gif)
+* `extractMin()` ha costo ![O_1](/imgs/O_logV.gif)
 * Il ciclo for dentro il while costa `E` perchè in totale controlla tutti gli archi una singola volta
-* All'interno della `relax()` viene effettuato un `decrease_key()` con costo ![O_1](imgs/O_1.gif)
+* All'interno della `relax()` viene effettuato un `decrease_key()` con costo ![O_1](/imgs/O_1.gif)
 
 > `V + V(logV) + E`
 
-![line638](imgs/O_VlogV+E.gif)
+![line638](/imgs/O_VlogV+E.gif)
 
 
 ### Algoritmo DAG-Shortest-Path
@@ -1366,7 +1366,7 @@ function dagShortestPath(G=(V, E), s){
 
 > `theta(V + E) + V + theta(V) --> theta(V + E)`
 
-![line677](imgs/theta_V+E.gif)
+![line677](/imgs/theta_V+E.gif)
 
 ## Shortes Path da sorgente Multipla
 
@@ -1374,7 +1374,7 @@ function dagShortestPath(G=(V, E), s){
 
 <details>
     <summary>(Tropicanal)</summary>
-    <img src="imgs/tropicanal.gif">
+    <img src="/imgs/tropicanal.gif">
 </details>
 
 #### Versione Lenta
@@ -1432,7 +1432,7 @@ function extend_shortest_path(L: "matrice su cui iterare", W: "matrice di adiace
 ##### Costo
 > n * n^3
 
-![line743_0](imgs/O_n4.gif)
+![line743_0](/imgs/O_n4.gif)
 
 <hr>
 
@@ -1446,11 +1446,11 @@ function extend_shortest_path(L: "matrice su cui iterare", W: "matrice di adiace
 2. La lunghezza massima del cammino minimo passante per `n` **vertici** è di `n - 1` **archi**
 3. Per ridurre il costo dell'algoritmo [precedente](#versione-lenta), non serve calcolare tutte le matrici, quindi si procede con la *tencica dell'elevazione al quadrato ripetuta*.
 
-![tecnica_segreta](imgs/tecnica_segereta.png) 
+![tecnica_segreta](/imgs/tecnica_segereta.png) 
 
 <details style="display: inplace">
     <summary>Nani !?!?</summary>
-    <img src="imgs/okuto.gif">
+    <img src="/imgs/okuto.gif">
 </details>
 
 <!-- MR GIU approva -->
@@ -1502,7 +1502,7 @@ function extend_shortest_path(L: "matrice su cui iterare", W: "matrice di adiace
 
 > logn * n^3
 
-![line816_0](imgs/O_n=O_V.gif)
+![line816_0](/imgs/O_n=O_V.gif)
 perchè n = V
 
 ### Algoritmo Floyd Warshll
@@ -1511,9 +1511,9 @@ perchè n = V
 
 Ad ogni iterazione controlla se passando per il vertice `k` si ottiene un cammino migliore del cammino dell'iterazione precedente il quale non conteneva il vertice `k` presente al suo interno.
 
-Si utilizza la matrice di Adiacenza e una matrice ![line825](imgs/PI.gif) per memorizzare il padre del vertice di arrivo
+Si utilizza la matrice di Adiacenza e una matrice ![line825](/imgs/PI.gif) per memorizzare il padre del vertice di arrivo
 
-![line827_0](imgs/line827_0.gif)
+![line827_0](/imgs/line827_0.gif)
 
 #### Codice
 
@@ -1541,9 +1541,9 @@ function floydWarshall(W: "Matrice di Adiacenza"){
 
 #### Costo
 
-**Tempo**: ![line855](imgs/O_n3.gif)
+**Tempo**: ![line855](/imgs/O_n3.gif)
 
-**Spazio**: ![line857](imgs/O_n2.gif)
+**Spazio**: ![line857](/imgs/O_n2.gif)
 
 > 2 * n^2 --> O(n^2)
 
@@ -1599,7 +1599,7 @@ function chiusuraTransitiva(G=(V, E)) {
 
 > theta(n^2) + theta(n^3) --> theta(n^3)
 
-![theta_n3](imgs/theta_n3.gif)
+![theta_n3](/imgs/theta_n3.gif)
 
 ### Algoritmo di Johnson
 
@@ -1666,4 +1666,4 @@ function johnson(G, w) {
 #### Costo
 
 Se implementato con Heap di Fibonacci il costo complessivo è: 
-![costo lungo](imgs/O_V2_logV+VE.gif)
+![costo lungo](/imgs/O_V2_logV+VE.gif)
